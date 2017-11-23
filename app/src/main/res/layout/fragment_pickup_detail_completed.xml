@@ -1,0 +1,171 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.coopmart.kurir.coopkurir.Fragment.PickupDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Rincian pengambilan produk"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"/>
+
+                <include layout="@layout/separator_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Pengambilan"
+                        android:textSize="16sp"
+                        android:layout_margin="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/fpr_output_timestamp"/>
+
+                    <include layout="@layout/spacing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sesi Pengambilan"
+                        android:textSize="16sp"
+                        android:layout_margin="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/fpr_output_session"/>
+
+                    <include layout="@layout/spacing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pelanggan"
+                        android:textSize="16sp"
+                        android:layout_margin="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/fpr_output_farmer_name"/>
+
+                    <include layout="@layout/spacing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat Pelanggan"
+                        android:textSize="16sp"
+                        android:layout_margin="16dp"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/fpr_output_address"
+                        android:layout_weight="1"/>
+
+                    <include layout="@layout/spacing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Produk"
+                        android:textSize="16sp"
+                        android:layout_margin="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/fpr_output_product_name"/>
+
+                    <include layout="@layout/spacing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Panen"
+                        android:textSize="16sp"
+                        android:layout_margin="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/fpr_output_product_qty"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harga Bayar"
+                        android:textSize="16sp"
+                        android:layout_margin="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/fpr_output_product_payment"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
