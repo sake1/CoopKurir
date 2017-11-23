@@ -78,16 +78,17 @@ public class HomeActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavBarListener());
         /**/
 
-        if(this.getIntent() != null) {
-            if(this.getIntent().getIntExtra("flag", Navigator.ERROR_CODE) == Navigator.FROM_LOGIN_ACTIVITY) {
-                changeHomeActivityDisplayedFragment(new MainMenuFragment(), false);
-            } else if(this.getIntent().getIntExtra("flag", Navigator.ERROR_CODE) == Navigator.FROM_SETTING_ACTIVITY) {
-                Intent intent = new Intent(this, LoginActivity.class);
-                intent.putExtra("flag", Navigator.FROM_HOME_ACTIVITY);
-                startActivity(intent);
-                finish();
-            }
-        }
+//        if(this.getIntent() != null) {
+//            if(this.getIntent().getIntExtra("flag", Navigator.ERROR_CODE) == Navigator.FROM_LOGIN_ACTIVITY) {
+//                changeHomeActivityDisplayedFragment(new MainMenuFragment(), false);
+//            } else if(this.getIntent().getIntExtra("flag", Navigator.ERROR_CODE) == Navigator.FROM_SETTING_ACTIVITY) {
+//                Intent intent = new Intent(this, LoginActivity.class);
+//                intent.putExtra("flag", Navigator.FROM_HOME_ACTIVITY);
+//                startActivity(intent);
+//                finish();
+//            }
+//        }
+        changeHomeActivityDisplayedFragment(new MainMenuFragment(), false);
     }
 
     @Override
